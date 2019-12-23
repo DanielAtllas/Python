@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Variáveis e Laços</title>
+        <meta name="description" content="Este é um site referênte à variáveis e laços de repetição no Python">
+    </head>
+    <body>
+        <h1>Variáveis e Laços de Repetição - Python</h1>
+        <p>Como nas principais linguagens, é preciso declarar um <strong>nome</strong> e atribuir um <strong>valor</strong> a esta variável. Perceba que não é preciso informar o seu tipo, pois o mesmo será reconhecido na atribuição. Uma variável possui tipos de dados, podendo ela ser <strong>int</strong> (valores numéricos inteiros), <strong>float</strong> (valores numéricos quebrados), <strong>string</strong> (valores de dados em texto) e <strong>booleano</strong> (valores verdadeiros e falsos). Como no exemplo a seguir:</p>
+        <pre>
+    var1 = Valor
+        </pre>
+        <strong>OBS: Para a exibição de uma variável com algum texto, é preciso concatenar um ao outro:</strong>
+        <pre>
+    <strong>print(</strong>"texto"<strong>+</strong>var1)
+        </pre>
+        <ul>
+            <li><strong>Estruturas Condicionais</strong></li>
+                <p>As condicionais, fazem com que o programa execute algo caso a condição seja verdadeira, ou seja, é usada uma comparação lógica em uma condição. A estrutura usada, é através do comando <strong>if</strong>, sendo baseado no conceito de "se...então", onde se a condição for respeitada, tal comando seguirá, além do uso do <strong>else</strong> que respeita o conceito de que caso a primeira condição não seja satisfeita, outro comando seguirá. Isso é realizado através do comando:</p>
+                <pre>
+            <strong>if</strong> <i>var1 operador var2</i><strong>:</strong>
+                <i>resultado</i>
+            <strong>else:</strong>
+                <i>resultado</i>
+                </pre>
+                <strong><p>OBS: Perceba o uso de dois pontos presentes no comando, para a indicação de resultado da condicional.</p></strong>
+            <hr>
+            <li><strong>Laçoes de repetição</strong></li>
+                <p>Os laços de repetição, são condições que ao serem respeitadas, algo será feito repetidas vezes. Sendo eles:</p>
+                <ul>
+                    <li><strong>while</strong></li>
+                        <p>Ou comando <strong>enquanto</strong>, onde o comando será repetido, enquanto a condição dos valores permanecer.</p>
+                        <pre>
+                    <strong>while</strong> <i>var1 condição var2</i>
+                        <i>resultado</i>
+                        </pre>
+                    <p>É possível incrementar umvalor, onde a cada repetição, o valor aumentará ou irá diminuir. Através do comando <strong>var1 = var1 + 1</strong></p>
+                    <li><strong>For</strong></li>
+                        <p>O laço <i>for</i> varrerá uma lista de dados, ou seja, o comando será executado, até que o valor final seja atingido.</p>
+                        <pre>
+                    <strong>for</strong> <i>var1</i> <strong>in</strong> <i>lista</i>
+                        <i>resultado</i>
+                        </pre>
+                        <p>Ou, é possível usar um range, onde o looping terminará ao chegar no valor final:</p>
+                        <pre>
+                    <strong>for</strong> <i>var1</i> <strong>in range(</strong><i>VF</i><strong>):</strong>
+                        <i>resultado</i>
+                        </pre>
+                        <p>Ou até mesmo manipular este range, declarando um valor inicial, um valor final e a sequência contada:</p>
+                        <pre>
+                    <strong>for</strong> <i>var1</i> <strong>in range(</strong><i>VI,VF,SEQ</i><strong>):</strong>
+                        <i>resultado</i>
+                        </pre>
+                </ul>
+        </ul>
+    </body>
