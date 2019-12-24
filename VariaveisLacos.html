@@ -54,5 +54,39 @@
                         <i>resultado</i>
                         </pre>
                 </ul>
+            <li><strong>Strings</strong></li>
+                <p>Strings são variáveis que recebem valores do tipo texto, os quais são representadas por aspas duplas. Ou seja, todo tipo de dado que for considerado como texto (varchar na maioria dos casos) é chamado de string. Seguem alguns comandos manipuláveis de strings:</p>
+                <ul>
+                    <li><strong>Tamanho da string</strong></li>
+                        <p>É possível exibir o tamanho da string, sendo exibido a <strong>quantidade de caracteres presentes</strong> no mesmo. Para isso, é usado o comando <strong>len</strong>, como no exemplo seguinte:</p>
+                        <pre>
+                    <strong>len(</strong><i>var1</i><strong>)</strong>
+                        </pre>
+                    <li><strong>Parte da string</strong></li>
+                        <p>Através do comando <strong>[:]</strong> é possível exibir apenas parte da string, onde deve ser informado o caracter inicial e o final (posição), dessa forma:</p>
+                        <pre>
+                    <strong>print(</strong><i>var1</i><strong>[</strong><i>PI</i><strong>:</strong><i>PF</i><strong>]</strong>
+                        </pre>
+                    <li><strong>Alteração da fonte</strong></li>
+                        <p>Um dos métodos disponíveis presentes em strings, é a alteração da fonte da string <strong>maiúsculo ou minúsculo</strong>. Através do comando <strong>lower/upper</strong>:</p>
+                        <pre>
+                    <i>var1</i><strong>.upper()</strong>
+                        </pre>
+                        <li><strong>Converção da string</strong></li>
+                        <p>Pelo comando <strong>split()</strong> é possível converter a string para uma lista, de forma que é informado um parâmetro, e a partir dele, todo o resto será parte da lista.</p>
+                        <pre>
+                    <i>var1</i><strong>.split("</strong><i>parametro</i><strong>")</strong>
+                        </pre>
+                        <li><strong>Procura</strong></li>
+                        <p>Também é possível encontrar a posição que parte de uma string é encontrada, devendo ser informado qual parte deseja.</p>
+                        <pre>
+                    <i>var1</i><strong>.find("</strong><i>parametro</i><strong>")</strong>
+                        </pre>
+                        <li><strong>Reconstrução</strong></li>
+                        <p>O último método para strings, é a reconstrução de parte da string por uman nova. Porém é preciso informar qual dado deverá ser reconstruído.</p>
+                        <pre>
+                    <i>var1</i><storng>.replace("</storng><i>dado</i><strong>","</strong><i>novo dado</i><strong>")</strong>
+                        </pre>
+                </ul>
         </ul>
     </body>
