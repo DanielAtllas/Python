@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Intrução</title>
+        <meta name="description" content="Este é um site referênte à estudos sobre Python">
+    </head>
+    
+    <body>
+        <h1> Introdução - Python </h1>
+        <p>O python é uma das mais populares <strong>lingaguens de programação</strong> usada nas mais diveras empresas, criada no ano de 1991, sendo usada em serviços web, desenvolvimento de softwares e sistemas, casos mamemátics e etc. Além disso, devido ao seu poder de criação de scripts, o python tem capacidade de rodar em diferentes plataformas e sistemas, seja ele Windows, Linux ou Max, estando escrito inteiramente em inglês.</p>
+        <p>Para que o scripts sejam criados na linguagem python, é necessário que o mesmo se encontre instalado em sua máquina (alguns computadores possuem a chance de já possuirem o <i>client</i> instalado, por isso, basta um comando de <strong>python --version</strong> dado na linha de comando para verificação). Para isso, é necessário baixar a versão do <strong>Python 3</strong> na máquina usada, podendo ser encontrado no link: <a href="https://www.python.org/">https://www.python.org/</a>. Além disso, é recomendado baixo o <strong>sublime text</strong>, como um compilador para a escrita da linguagem, ou seja, nele será possível escrever e visualizar todo o script e seu andamento, fazendo com que o python 3 apenas o compile e execute na máquina em questão.
+        <p>É importante que ao se salvar qualquer script na linguagem python, o arquivo seja salvado com o "<strong>.py</strong>" (que tornará o executável como um python propriamente dito). Perceba que diante disso, o script pode ser escrito em qualquer plataforma de editor de texto, como o próprio NotePad por exemplo, desde que o arquivo seja salvo diretemante como ".py" (porém, recomendado que se use um compilador próprio para isso).</p>
+        <hr>
+        <ul>
+            <li><strong>Comentários</strong></li>
+                <p>Outra definição que pode ser de tamanha importância durante o entendimento de um script, são os comentários que o compõem. Esses comentários são dados de 2 formas:</p>
+                <ol>
+                    <li><strong>#</strong> - Que tornará toda uma linha como comentário, ou seja, qualquer escrita dentro desta linha, o leitor a entenderá como um comentário e a ignorará.</li>
+                    <br>
+                    <li><strong>"""</strong> - Que tornará N linhas como comentários, devendo partir do programador a repetição do comando para indicar o fim da caixa de comentários.</li>
+                </ol>
+            <br>
+            <li><strong>Python Syntax</strong></li>
+                <p>A sintaxe do python, é o que fará a <strong>exibição de algum texto</strong> para o usuário, seja ele um texto propriamente dito, uma variável ou a soma dos dois. Esse comando de exibição é semelhante ao da linguagem C, onde é dado um <strong>print()</strong>, com o texto dentro da função. como no exemplo a seguir:</p>
+                <pre>
+            <strong>print</strong>("Hello World!");
+                </pre>
+                <p>Que fará com que o texto <i>Hello World!</i> seja mostrado em tela. Além disso, esta função possui algumas características de mostragem, como por exemplo a <strong>exibição do valor de uma variável</strong> ou de um texto concatenado a uma variável, por exemplo:</p>
+                <pre>
+            <strong>print</strong>(var);
+            
+            ou
+            
+            <strong>print</strong>("Texto ",var);
+                </pre>
+                <p>Assim como, também é possível <strong>pular linhas</strong>, sejam elas quantas quiser, dado pelo comando de <strong>\n</strong> dentro da função <i>print()</i>. Logo, se utilizar de N <i>\n</i> na função (seja antes ou após o texto), serão puladas as N linhas, como no exemplo abaixo:</p>
+                <pre>
+            <strong>print</strong>(\n\n <i>texto</i> \n\n);
+                </pre>
+            <li><strong>Variáveis</strong></li>
+                <p>O python, diferente de outras linguagens, possui uma peculiaridade sobre a sua definição de variáveis, uma vez que <strong>não é preciso informar o tipo da variável</strong>, pois em várias outras linguagens, ao se declarar uma variável, é necessário passar como informação, o seu tipo, seja ele <i>int, float</i> ou <i>string</i>. Porém, no python, a própria linguagem define esse tipo da variável ao informar o valor da variável, ou seja, se em uma variável X for dado um valor numérico inteiro, a própria linguagem subentende a variável como do tipo <i>int</i>. Logo, sua declaração se dá por o <strong>nome da variável e seu valor</strong>, como no exemplo abaixo:</p>
+                <pre>
+            var1 = 25;       (<strong>int</strong>)
+            
+            var2 = 2.5;      (<strong>float</strong>)
+            
+            var3 = "Hello";  (<strong>String</strong>)
+                </pre>
+                <p>Ou seja, as variáveis funcionarão como conteiners para o armazenamento de valores de dados. Além disso, devido ao fato de não haver uma declaração do tipo da variável, em qualquer momento do programa, o usuário poderá inserir nela um valor completamente diferente de seu atual. Imagine que uma variável X é criada e é atribuido a ela o valor 5 (inteiro), posteriormente, há a possibilidade de inserir um valor de string como "Marcos", por exemplo (Além de que, é importante lembrar, que os valores do tipo <i>string</i> são por sua vez, <i>case-sensitive</i>).</p>
+                <p>Como nas demais linguagens, uma variável não pode possuir caracteres especiais e deve respeitar as regras de criação, como por exemplo, o fato de não poder haver espaço entre as letras de seu nome ou iniciar com um valor numérico.</p>
+                <p>Outro conceito importante sobre as variáveis, é que toda variável criada durante o programa principal, é tida como uma <strong>variável global</strong>, ou seja, será possível usa-la durante o programa e até mesmo dentro de funções (sem necessidade de cria-la de novo). Porém, o Python disponibiliza da possibilidade de <strong>variáveis globais dentro de funções</strong>, as quais podem ser criadas enquanto função e usadas da mesma forma enquanto programa principal. Essas dadas pelo prefixo:</p>
+                <pre>
+            <strong>global</strong> var;
+                </pre>
+            <p>Por sua vez, essas são chamadas de <strong>global keywords</strong>.</p>
+            <p>Por mais que as variáveis não necessitam do prefixo indicando o tipo de cada variável, a leitura/atribuição de um valor a ela, torna-a de um tipo especifico. Diante disso, os tipos possíveis das variáveis se constituem em:</p>
+            <ul>
+                <li>Text Type:		<strong>str								</strong></li>
+                <br>
+                <li>Numeric Types:	<strong>int, float, complex             </strong></li>
+                <br>
+                <li>Sequence Types:	<strong>list, tuple, range              </strong></li>
+                <br>
+                <li>Mapping Type:	<strong>dict                            </strong></li>
+                <br>
+                <li>Set Types:		<strong>set, frozenset                  </strong></li>
+                <br>
+                <li>Boolean Type:	<strong>bool                            </strong></li>
+                <br>
+                <li>Binary Types:	<strong>bytes, bytearray, memoryview    </strong></li>
+                <br>
+            </ul>
+            <p>Atrvés do comando de exibição (<strong>print()</strong>) integrado com a função de <strong>type()</strong>, é possível exibir e assim identificar qual o tipo atual de uma determinada variável, dado isso pelo comando:</p>
+            <pre>
+            <strong>print(type(</strong>var));
+            </pre>
+        </ul>
+    </body>
+</html>
